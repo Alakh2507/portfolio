@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import Profile from '../assets/alakh_fullimage.png'
 import CodeImg from '../assets/code-icon.png'
 import educationImg from '../assets/edu-icon.png'
@@ -14,8 +14,7 @@ import { ThemeContext } from '../context/ThemeContext.jsx'
 const About = () => {
 
     const { darkMode } = useContext(ThemeContext);
-
-
+    const [toolname, setToolname] = useState(true)
 
 
     return (
@@ -52,13 +51,13 @@ const About = () => {
                         <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2   hover:shadow-[4px_4px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2 '>
                             <img src={darkMode ? CodeDark : CodeImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit '>Languages</p>
-                            <p className={darkMode ? "text-white/70" : "text-gray-700"}>JavaScript, HTML, CSS React.js Nodejs </p>
+                            <p className={darkMode ? "text-white/70" : "text-gray-700"}> <span className='hidden sm:block'> JavaScript(ES6), Mern stack</span><span className=' sm:hidden '> JavaScript, Reactjs  <span className=''>Tailwindcss</span>, Nodejs,<br /> Expressjs, MongoDB </span></p>
                         </div>
 
                         <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px] pl-4 sm:pl-6 pr-[1px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2'>
                             <img src={darkMode ? EduIconDark : educationImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit'>Education</p>
-                            <p className={darkMode ? "text-white/70" : "text-gray-700 "}>B.tech in Computer Science & Engineering</p>
+                            <p className={darkMode ? "text-white/70" : "text-gray-700"}>B.tech in Computer Science & Engineering</p>
                         </div>
 
                         <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black]  transition delay-100 duration-600 hover:-translate-y-2 active:-translate-y-2'>
@@ -74,6 +73,7 @@ const About = () => {
                             {
                                 techIcon.map((item, index) => (
                                     <div
+                                        onClick={() => setToolname(prev => !prev)}
                                         key={index}
                                         className="relative  w-18 h-18 group overflow-hidden rounded-sm border"
                                     >
@@ -85,9 +85,15 @@ const About = () => {
 
                                         {/* Overlay */}
                                         <div
-                                            className={`absolute inset-0 flex  items-center justify-center translate-y-full transition-transform bg-transparent  duration-300 group-hover:translate-y-0  group-active:translate-y-0 text-black cursor-pointer z-200 text-sm font-outfit font-semibold ${darkMode ? "text-white" : "text-black"}`}>
+                                            className={`absolute inset-0 flex  items-center justify-center translate-y-full transition-transform bg-transparent  duration-300 group-hover:translate-y-0  text-black cursor-pointer z-200 text-sm font-outfit font-semibold ${darkMode ? "text-white" : "text-black"}`}>
                                             <p className={`${darkMode ? "" : " bg-blue-950 text-white px-5 py-1 text-xs"}`}>{item.name}</p>
                                         </div>
+                                        {toolname ?
+                                            <div
+                                                className={` sm:hidden absolute inset-0 flex  items-center justify-center  transition-transform bg-transparent  duration-300 group-hover:translate-y-0  text-black cursor-pointer z-200 text-sm font-outfit font-semibold ${darkMode ? "text-white" : "text-black"}`}>
+                                                <p className={`${darkMode ? "" : " bg-blue-950 text-white px-5 py-1 text-xs"}`}>{item.name}</p>
+                                            </div> : ""}
+
                                     </div>
                                 ))
                             }

@@ -12,11 +12,14 @@ const Projectdetail = () => {
     const result = ProjectImg.find(
         item => item.id === Number(id)
     );
+    console.log(result)
 
     if (!result) {
         return (
-            <div className="text-white text-center py-20">
-                Project Not Found
+            <div className="h-screen w-screen flex items-center justify-center bg-red-700 font-bold font-poppine">
+                <p className="text-5xl text-center">
+                    Project Not Found
+                </p>
             </div>
         );
     }
@@ -39,11 +42,12 @@ const Projectdetail = () => {
                 <div className="text-center">
 
                     {/* Title */}
-                    <h1 className={`${darkMode ? "text-white" : " text-black"}
-            text-5xl
+                    <h1 className={`${darkMode ? "text-white" : " text-black"} text-3xl
+         md:text-5xl
             pb-4
-            md:text-6xl
+            lg:text-6xl
             font-bold
+            
             text-black
         
                     `}>
@@ -51,9 +55,9 @@ const Projectdetail = () => {
                     </h1>
 
                     {/* Short Content */}
-                    <p className="
+                    <p className=" 
             text-md
-            mt-6
+            mt-4
             max-w-3xl
             mx-auto
             leading-6
@@ -66,7 +70,7 @@ const Projectdetail = () => {
 
                 {/* ================= DESCRIPTION SECTION ================= */}
                 <div className="
-          mt-24
+          mt-20
           grid
           lg:grid-cols-2
           gap-14
@@ -77,7 +81,8 @@ const Projectdetail = () => {
                     <div>
 
                         <h2 className="
-              text-3xl
+               text-2xl
+              md:text-3xl
               font-bold
               mb-6
             ">
