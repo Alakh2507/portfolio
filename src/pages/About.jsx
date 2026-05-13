@@ -14,7 +14,7 @@ import { ThemeContext } from '../context/ThemeContext.jsx'
 const About = () => {
 
     const { darkMode } = useContext(ThemeContext);
-    const [toolname, setToolname] = useState(true)
+    const [toolname, setToolname] = useState(false)
 
 
     return (
