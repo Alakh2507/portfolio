@@ -63,7 +63,7 @@ export const ProjectImg = [
         images: [portfolioimage, Bookappointment, Blogapp],
         tech: ["javaScript", "React", "Tailwind css"],
         live: "",
-        github: "https://github.com/Alakh2507/Responsivepage",
+        github: "https://github.com/Alakh2507/portfolio",
     },
 
 
