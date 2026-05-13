@@ -31,7 +31,8 @@ const Project = ({ title, image, content, id, live, github }) => {
                     src={image}
                     alt={title}
                     className="
-            h-52 w-full object-cover
+                    
+            h-52 w-full object-contain
             transition-transform duration-500
             group-hover:scale-110
           "

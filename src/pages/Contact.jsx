@@ -79,7 +79,7 @@ const Contact = () => {
             <div className='max-w-7xl mx-auto mt-14 grid lg:grid-cols-2 gap-16 items-start'>
 
                 {/* LEFT SIDE */}
-                <div className="bg-white rounded-3xl p-1 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl duration-300">
+                <div className="bg-white rounded-3xl p-4 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl duration-300">
 
                     {/* HEADING */}
                     <h3 className="   text-xl text-center text-[#0f172a] font-bold sm:text-3xl mb-6 flex items-center gap-3">

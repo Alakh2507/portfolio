@@ -57,7 +57,7 @@ const About = () => {
                         <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px] pl-4 sm:pl-6 pr-[1px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2'>
                             <img src={darkMode ? EduIconDark : educationImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit'>Education</p>
-                            <p className={darkMode ? "text-white/70" : "text-gray-700"}>B.tech in Computer Science & Engineering</p>
+                            <p className={darkMode ? "text-white/70" : "text-gray-700"}>B.tech in Computer Science And <br /> Engineering</p>
                         </div>
 
                         <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black]  transition delay-100 duration-600 hover:-translate-y-2 active:-translate-y-2'>
