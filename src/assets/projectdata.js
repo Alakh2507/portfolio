@@ -92,10 +92,10 @@ export const techIcon = [
         image: react,
         name: "React.js",
     },
-    // {
-    //     image: nextjs,
-    //     name: "Next.js",
-    // },
+    {
+        image: nextjs,
+        name: "Next.js",
+    },
     {
         image: nodejs,
         name: "Node.js",
