@@ -23,7 +23,6 @@ const About = () => {
             <p className='text-lg text-center text-[15px]'>Introduction</p>
             <h2 className='text-4xl text-center font-base font-poppins font-medium'>About Me</h2>
 
-
             <div className='flex flex-col justify-between lg:flex-row  xl:justify-around mt-15'>
 
                 <div className='flex justify-center '>
@@ -50,19 +49,19 @@ const About = () => {
                     </div>
 
                     <div className='flex flex-wrap w-full items-center justify-center sm:flex-row  gap-3  xl:gap-4 '>
-                        <div className='flex flex-col  border border-gray-500 rounded-md  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2   hover:shadow-[4px_4px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2 '>
+                        <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2   hover:shadow-[4px_4px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2 '>
                             <img src={darkMode ? CodeDark : CodeImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit '>Languages</p>
                             <p className={darkMode ? "text-white/70" : "text-gray-700"}>JavaScript, HTML, CSS React.js Nodejs </p>
                         </div>
 
-                        <div className='flex flex-col  border border-gray-500 rounded-md  min-w-[320px] sm:min-w-0 sm:max-w-[200px] pl-4 sm:pl-6 pr-[1px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2'>
+                        <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px] pl-4 sm:pl-6 pr-[1px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2'>
                             <img src={darkMode ? EduIconDark : educationImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit'>Education</p>
                             <p className={darkMode ? "text-white/70" : "text-gray-700 pr-3"}>B.Tech in Computer Science & Engineering</p>
                         </div>
 
-                        <div className='flex flex-col  border border-gray-500 rounded-md  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black]  transition delay-100 duration-600 hover:-translate-y-2 active:-translate-y-2'>
+                        <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black]  transition delay-100 duration-600 hover:-translate-y-2 active:-translate-y-2'>
                             <img src={darkMode ? ProjectIconDark : ProjectImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit'>Projects</p>
                             <p className={darkMode ? "text-white/70" : "text-gray-700"}>Buit more than 5 projects</p>
