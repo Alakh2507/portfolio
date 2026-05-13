@@ -10,8 +10,8 @@ const Footer = () => {
 
             <div className='flex flex-col w-full md:w-auto'>
                 <div className='flex flex-row w-full md:max-w-[500px] justify-between   sm:justify-around  items-center  gap-5 md:gap-7 '>
-                    <a href="">GitHub</a>
-                    <a href="https://www.linkedin.com/in/alakh-niranjan-0411a8253/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Alakh2507" target="_blank" rel="noopener noreferrer" >GitHub</a>
+                    <a href="https://www.linkedin.com/in/alakh-niranjan-0411a8253/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="">Twitter</a>
                 </div>
                 <p className='text-center pt-3 md:pt-0 md:hidden '>&copy;&nbsp;2025 Alakh Niranjan.</p>
