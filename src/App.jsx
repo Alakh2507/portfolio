@@ -1,6 +1,6 @@
 import './App.css'
 import bgImage from './assets/header-bg-color.png'
-import Header from './pages/header.jsx'
+import Header from './pages/Header.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Projectdetail from './pages/Projectdetail.jsx'
 import { ToastContainer } from "react-toastify";
