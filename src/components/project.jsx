@@ -42,7 +42,7 @@ const Project = ({ title, image, content, id, live, github }) => {
             <div className="p-5">
                 <h2
                     className="
-            text-2xl font-bold text-gray-800
+            text-2xl  font-bold text-gray-800
             transition-colors duration-300
             group-hover:text-blue-600
           "

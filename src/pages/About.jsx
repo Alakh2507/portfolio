@@ -19,9 +19,9 @@ const About = () => {
 
 
     return (
-        <div className='w-full mt-[120px] ' id='about'>
+        <div className='w-full px-2 sm:px-0 mt-[120px] ' id='about'>
             <p className='text-lg text-center text-[15px]'>Introduction</p>
-            <h2 className='text-4xl text-center font-base font-poppins'>About Me</h2>
+            <h2 className='text-4xl text-center font-base font-poppins font-medium'>About Me</h2>
 
 
             <div className='flex flex-col justify-between lg:flex-row  xl:justify-around mt-15'>
@@ -39,12 +39,7 @@ const About = () => {
                     <div className="max-w-[700px] text-start mt-10">
 
                         <p
-                            className={`
-      ${darkMode ? "text-white/90" : "text-gray-700"}
-      text-sm sm:text-lg
-      leading-7
-      tracking-wide
-    `}
+                            className={` ${darkMode ? "text-white/90" : "text-gray-700"} text-sm sm:text-lg leading-7 tracking-wide`}
                         >
                             Passionate MERN Stack Developer with <span className='text-blue-700 font-outfit font-semibold'>6 months of professional
                                 experience at Webtechgen, Lucknow, India.</span>  Skilled in building
@@ -54,20 +49,20 @@ const About = () => {
 
                     </div>
 
-                    <div className='flex flex-col w-full items-center justify-center sm:flex-row  gap-3  xl:gap-4 '>
-                        <div className='flex flex-col  border border-gray-500 rounded-md max-w-[200px] pl-6 pr-[2px] h-auto py-4 gap-2   hover:shadow-[4px_4px_0px_black]  transition delay-50 duration-500 hover:-translate-y-2 '>
+                    <div className='flex flex-wrap w-full items-center justify-center sm:flex-row  gap-3  xl:gap-4 '>
+                        <div className='flex flex-col  border border-gray-500 rounded-md  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2   hover:shadow-[4px_4px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2 '>
                             <img src={darkMode ? CodeDark : CodeImg} alt="Code Icon" className='w-7 h-7' />
-                            <p className='font-outfit'>Languages</p>
+                            <p className='font-outfit '>Languages</p>
                             <p className={darkMode ? "text-white/70" : "text-gray-700"}>JavaScript, HTML, CSS React.js Nodejs </p>
                         </div>
 
-                        <div className='flex flex-col  border border-gray-500 rounded-md max-w-[200px] pl-6 pr-[1px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] transition delay-50 duration-500 hover:-translate-y-2'>
+                        <div className='flex flex-col  border border-gray-500 rounded-md  min-w-[320px] sm:min-w-0 sm:max-w-[200px] pl-4 sm:pl-6 pr-[1px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2'>
                             <img src={darkMode ? EduIconDark : educationImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit'>Education</p>
-                            <p className={darkMode ? "text-white/70" : "text-gray-700"}>B.Tech in Computer Science and Engineering</p>
+                            <p className={darkMode ? "text-white/70" : "text-gray-700 pr-3"}>B.Tech in Computer Science & Engineering</p>
                         </div>
 
-                        <div className='flex flex-col  border border-gray-500 rounded-md max-w-[200px] pl-6 pr-[2px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] transition delay-100 duration-600 hover:-translate-y-2'>
+                        <div className='flex flex-col  border border-gray-500 rounded-md  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black]  transition delay-100 duration-600 hover:-translate-y-2 active:-translate-y-2'>
                             <img src={darkMode ? ProjectIconDark : ProjectImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit'>Projects</p>
                             <p className={darkMode ? "text-white/70" : "text-gray-700"}>Buit more than 5 projects</p>
@@ -76,7 +71,7 @@ const About = () => {
 
                     <div className=' px-3 sm:px-4  xl:px-16 '>
                         <p>Tool i use</p>
-                        <div className='w-full  flex flex-wrap gap-5 mt-4 '>
+                        <div className='w-full  flex flex-wrap  justify-center sm:justify-start gap-5 mt-4 '>
                             {
                                 techIcon.map((item, index) => (
                                     <div
@@ -87,11 +82,11 @@ const About = () => {
                                         <img
                                             src={item.image}
                                             alt="tech"
-                                            className="w-full h-full p-[9px] transition duration-300 group-hover:scale-112" />
+                                            className="w-full h-full p-[9px] transition duration-300 group-hover:scale-112 group-active:scale-112 " />
 
                                         {/* Overlay */}
                                         <div
-                                            className={`absolute inset-0 flex  items-center justify-center translate-y-full transition-transform bg-transparent  duration-300 group-hover:translate-y-0 text-black cursor-pointer z-200 text-sm font-outfit font-semibold ${darkMode ? "text-white" : "text-black"}`}>
+                                            className={`absolute inset-0 flex  items-center justify-center translate-y-full transition-transform bg-transparent  duration-300 group-hover:translate-y-0  group-active:translate-y-0 text-black cursor-pointer z-200 text-sm font-outfit font-semibold ${darkMode ? "text-white" : "text-black"}`}>
                                             <p className={`${darkMode ? "" : " bg-blue-950 text-white px-5 py-1 text-xs"}`}>{item.name}</p>
                                         </div>
                                     </div>

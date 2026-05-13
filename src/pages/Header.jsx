@@ -22,7 +22,7 @@ const Header = () => {
             <div className='flex flex-col w-full  px-2 sm:px-10 md:px-[6%] lg:px-[7%] xl:px-[9%] '>
                 <Home />
                 <About />
-                <Services />
+                {/* <Services /> */}
                 <Mywork />
                 <Contact />
                 <Footer />

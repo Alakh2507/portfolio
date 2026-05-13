@@ -12,17 +12,17 @@ const Home = () => {
 
 
     return (
-        <div className='flex flex-col w-full items-center justify-center mt-20 ' id='home'>
+        <div className='flex flex-col  w-full px-2 sm:px-0 items-center justify-center mt-20 ' id='home'>
 
             <div className='flex flex-col mt-8 items-center gap-4'>
                 <img src={AlakhProfile} alt="Profile" className='w-40 h-40  rounded-full' />
                 <h1 className=' text-lg font-base'>Hi, I'm Alakh Niranjan</h1>
             </div>
 
-            <h2 className='mt-10 mb-5 text-center text-5xl leading-13 font-outfit  '>MERN Stack Developer <br /> based in India</h2>
-            <p className={` ${darkMode ? "text-white/90" : "text-black-500"} text-center  leading-relaxed max-w-[800px] text-sm md:text-base lg:text-lg  `}>
+            <h2 className='text-3xl  sm:text-5xl mt-10 mb-5 text-center leading-10 sm:leading-13 font-outfit  '>MERN Stack Developer <br /> based in India</h2>
+            <p className={` ${darkMode ? "text-white/90" : "text-black-500"} text-center  sm:px-0 leading-relaxed max-w-[800px] text-sm md:text-base lg:text-lg  `}>
                 MERN Stack Developer building modern, scalable, and user-friendly web applications.
-                <br />
+                <br className='hidden sm:block' />
                 I turn ideas into real-world products using React, Node.js, and MongoDB.
             </p>
 

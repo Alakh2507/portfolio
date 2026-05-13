@@ -36,7 +36,7 @@ const sidebar = ({ sidebar, setSidebar }) => {
                 >
                     About
                 </Link>
-                <Link
+                {/* <Link
                     to='services'
                     smooth={true}
                     duration={500}
@@ -46,7 +46,7 @@ const sidebar = ({ sidebar, setSidebar }) => {
 
                 >
                     Services
-                </Link>
+                </Link> */}
                 <Link
                     to='work'
                     smooth={true}

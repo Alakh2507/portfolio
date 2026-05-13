@@ -58,7 +58,7 @@ const Contact = () => {
             {/* TOP HEADING */}
             <div className='text-center w-full  sm:max-w-3xl mx-auto'>
 
-                <p className="text-blue-600 font-semibold tracking-[5px] uppercase mb-4">
+                <p className="text-blue-600 font-poppins font-medium tracking-[5px] uppercase mb-4">
                     Contact
                 </p>
 

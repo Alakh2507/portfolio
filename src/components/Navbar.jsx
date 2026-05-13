@@ -140,7 +140,7 @@ const Navbar = ({ sidebar, setSidebar }) => {
                     <img src={darkMode ? ArrowDark : arrow} alt='arrow' className='w-3 h-3 ' />
                 </Link>
                 <button className='md:hidden'>
-                    <img onClick={() => setSidebar(pre => !pre)} src={`${darkMode ? Menudark : Menu}`} className='w-10 h-8 cursor-pointer mr-5 ml-3 ' alt='Menu' />
+                    <img onClick={() => setSidebar(pre => !pre)} src={`${darkMode ? Menudark : Menu}`} className=' w-8 h-6 md:w-10 md:h-8 cursor-pointer  ml-3 ' alt='Menu' />
                 </button>
 
 
