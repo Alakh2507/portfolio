@@ -26,7 +26,7 @@ const Project = ({ title, image, content, id, live, github }) => {
       "
         >
             {/* Image */}
-            <div className="overflow-hidden">
+            <div className="overflow-hidden -mt-6">
                 <img
                     src={image}
                     alt={title}
@@ -37,6 +37,7 @@ const Project = ({ title, image, content, id, live, github }) => {
             group-hover:scale-110
           "
                 />
+
             </div>
 
             {/* Content */}

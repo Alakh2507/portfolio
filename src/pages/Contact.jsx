@@ -94,7 +94,7 @@ const Contact = () => {
                     </h3>
 
                     {/* PARAGRAPH */}
-                    <p className=" text-sm text-center sm:text-start leading-8 sm:text-[17px] text-slate-500 mb-10">
+                    <p className=" text-sm text-center sm:text-start leading-6 sm:leading-8 sm:text-[17px] text-slate-500 mb-10">
                         Feel free to reach out through the contact form
                         or find my contact information below. I’m always
                         open to discussing new projects, creative ideas,

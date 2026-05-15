@@ -39,10 +39,9 @@ const About = () => {
                         <p
                             className={` ${darkMode ? "text-white/90" : "text-gray-700"} text-sm sm:text-lg leading-7 tracking-wide`}
                         >
-                            Passionate MERN Stack Developer with <span className='text-blue-700 font-outfit font-semibold'>6 months of professional
-                                experience at Webtechgen, Lucknow, India.</span>  Skilled in building
-                            responsive and user-friendly web applications using React.js,
-                            Node.js, Express.js, MongoDB, JavaScript, and Tailwind CSS.
+                            Passionate MERN Stack Developer with expertise in building responsive,
+                            scalable, and user-friendly web applications using React.js, Node.js,
+                            Express.js, MongoDB, JavaScript, and Tailwind CSS.
                         </p>
 
                     </div>
@@ -57,7 +56,7 @@ const About = () => {
                         <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px] pl-4 sm:pl-6 pr-[1px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black] transition delay-50 duration-500 hover:-translate-y-2 active:-translate-y-2'>
                             <img src={darkMode ? EduIconDark : educationImg} alt="Code Icon" className='w-7 h-7' />
                             <p className='font-outfit'>Education</p>
-                            <p className={darkMode ? "text-white/70" : "text-gray-700"}>B.tech in Computer Science And <br /> Engineering</p>
+                            <p className={darkMode ? "text-white/70" : "text-gray-700"}><spna className=' sm:hidden'> B.tech in Computer Science <br /> And Engineering </spna> <spna className='hidden sm:block'> B.tech in Computer <br />Science  & Engineering </spna></p>
                         </div>
 
                         <div className='flex flex-col  border border-gray-500 rounded-md  min-h-[150px]  min-w-[320px] sm:min-w-0 sm:max-w-[200px]  pl-4 sm:pl-6  pr-[2px] h-auto py-4 gap-2 hover:shadow-[3px_3px_0px_black] active:shadow-[4px_4px_0px_black]  transition delay-100 duration-600 hover:-translate-y-2 active:-translate-y-2'>

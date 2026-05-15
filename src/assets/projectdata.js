@@ -20,16 +20,6 @@ import github from "./GitHub.png";
 import vercel from "./Vercel.png";
 
 export const ProjectImg = [
-    {
-        id: 1,
-        title: "food ordering website ",
-        content: "A full-stack food ordering and delivery web application with secure authentication, shopping cart, online payment integration, and order management features.", description:
-            "Developed a full-stack food ordering web application using React JS, Node.js, Express.js, and MongoDB. Implemented user authentication and authorization features, allowing users to create accounts and securely log in. Built shopping cart functionality to enable users to add food items and place orders seamlessly. Integrated the Stripe payment gateway for secure online payments and developed an order status tracking system. Also created an admin panel to manage food items, orders, and user activities efficiently.",
-        images: [foodhomepage, Bookappointment, Blogapp, Quickai],
-        tech: ["javaScript", "React.js", "CSS", "Node.js", "MongoDB", "Express", "JWT",],
-        live: "https://food-delivery-xi-gilt.vercel.app/",
-        github: "https://github.com/Alakh2507/FoodDelivery",
-    },
 
     {
         id: 2,
@@ -40,6 +30,16 @@ export const ProjectImg = [
         tech: ["JavaScript", "React.js", "CSS", "Node.js", "MongoDB", "Express", "JWT", "Stripe payment gateway"],
         live: "https://doctordeployment-project-ylp1.vercel.app/",
         github: "https://github.com/Alakh2507/DoctorAppointment",
+    },
+    {
+        id: 1,
+        title: "food ordering website ",
+        content: "A full-stack food ordering and delivery web application with secure authentication, shopping cart, online payment integration, and order management features.", description:
+            "Developed a full-stack food ordering web application using React JS, Node.js, Express.js, and MongoDB. Implemented user authentication and authorization features, allowing users to create accounts and securely log in. Built shopping cart functionality to enable users to add food items and place orders seamlessly. Integrated the Stripe payment gateway for secure online payments and developed an order status tracking system. Also created an admin panel to manage food items, orders, and user activities efficiently.",
+        images: [foodhomepage, Bookappointment, Blogapp, Quickai],
+        tech: ["javaScript", "React.js", "CSS", "Node.js", "MongoDB", "Express", "JWT",],
+        live: "https://food-delivery-xi-gilt.vercel.app/",
+        github: "https://github.com/Alakh2507/FoodDelivery",
     },
 
     {
