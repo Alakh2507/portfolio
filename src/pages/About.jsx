@@ -39,9 +39,7 @@ const About = () => {
                         <p
                             className={` ${darkMode ? "text-white/90" : "text-gray-700"} text-sm sm:text-lg leading-7 tracking-wide`}
                         >
-                            Passionate MERN Stack Developer with expertise in building responsive,
-                            scalable, and user-friendly web applications using React.js, Node.js,
-                            Express.js, MongoDB, JavaScript, and Tailwind CSS.
+                            MERN Stack Developer with 6 months of experience at WebTechGen, Lucknow, Uttar Pradesh, India, building scalable, production-ready web applications. Strong in React, Node.js, Express.js, and MongoDB with practical implementation of authentication, payments, and dashboards. Focused on writing clean, efficient code and solving real-world problems.
                         </p>
 
                     </div>
